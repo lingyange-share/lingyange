@@ -1,0 +1,60 @@
+module NetSign
+{
+    interface QrtzServer
+    {
+
+        /**
+         * 添加任务
+         * @param quartzDto
+         * @param quartzStr
+         * @param msg
+         * @return
+         */
+        int addSchedule(String quartzDto,  out string quartzStr,  out string msg);
+
+        /**
+         * 获取任务列表
+         * @param quartzDto
+         * @param quartzStr
+         * @param msg
+         * @return
+         */
+        int getScheduleList(String quartzDto,  out string quartzStr,  out string msg);
+
+        /**
+         * 运行任务
+         * @param quartzDto
+         * @param quartzStr
+         * @param msg
+         * @return
+         */
+        int doSchedule(String quartzDto,  out string quartzStr,  out string msg);
+
+        /**
+         * 暂停任务
+         * @param quartzDto
+         * @param quartzStr
+         * @param msg
+         * @return
+         */
+        int pauseSchedule(String quartzDto,  out string quartzStr,  out string msg);
+
+        /**
+         * 从暂停中恢复任务运行
+         * @param quartzDto
+         * @param quartzStr
+         * @param msg
+         * @return
+         */
+        int recoverSchedule(String quartzDto,  out string quartzStr,  out string msg);
+
+        /**
+         * 删除任务
+         * @param quartzDto
+         * @param quartzStr
+         * @param msg
+         * @return
+         */
+        int deleteSchedule(String quartzDto,  out string quartzStr,  out string msg);
+    };
+};

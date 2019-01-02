@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servants>
+    <servant name="QrtzServerObj">
+        <home-api>com.ancun.netsign.qrtz.netsign.QrtzServerServant</home-api>
+        <home-class>com.ancun.netsign.qrtz.netsign.impl.QrtzServerServantImpl</home-class>
+    </servant>
+    <listener>
+        <listener-class>com.ancun.netsign.qrtz.listener.QrtzServerListener</listener-class>
+    </listener>
+</servants>
